@@ -35,33 +35,44 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-24">
-      <div className="container px-4">
+    <section className="py-32 relative">
+      {/* Background pattern */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background to-muted/20" />
+
+      <div className="container px-4 relative">
         {/* Section header */}
-        <div className="text-center space-y-6 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold">
+        <div className="text-center space-y-8 mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
+            <span className="text-sm font-medium text-accent">Powerful Features</span>
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight">
             Everything You Need to
-            <span className="block text-accent">Perfect Your Physique</span>
+            <span className="block text-accent bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
+              Perfect Your Physique
+            </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Stop relying on subjective opinions. Get data-driven insights 
-            that help you build your dream physique.
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Stop relying on subjective opinions. Get data-driven insights
+            that help you build your dream physique with scientific precision.
           </p>
         </div>
 
         {/* Features grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {features.map((feature, index) => (
-            <div key={index} className="p-6 rounded-xl bg-card border border-border">
-              <div className="space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                  <feature.icon className="w-6 h-6 text-accent" />
+            <div
+              key={index}
+              className="group p-8 rounded-2xl bg-card/50 border border-border/50 backdrop-blur-sm hover:border-accent/30 transition-all duration-300 hover:shadow-lg hover:shadow-accent/5"
+            >
+              <div className="space-y-6">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <feature.icon className="w-7 h-7 text-accent" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
