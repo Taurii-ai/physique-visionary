@@ -3,6 +3,7 @@ import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import CTA from "@/components/CTA";
 import PrivacyPolicy from "@/components/PrivacyPolicy";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <HowItWorks />
       <CTA />
       <PrivacyPolicy />
+      <Footer />
     </div>
   );
 };

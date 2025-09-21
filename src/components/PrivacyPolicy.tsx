@@ -1,3 +1,7 @@
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const PrivacyPolicy = () => {
   return (
     <section className="py-16 bg-muted/20">
@@ -62,10 +66,18 @@ const PrivacyPolicy = () => {
           </div>
           
           <div className="mt-12 p-6 rounded-xl bg-card border border-border">
-            <p className="text-sm text-muted-foreground text-center">
-              <strong className="text-foreground">Last updated:</strong> September 2025 • 
-              <strong className="text-foreground ml-4">Effective:</strong> Immediately upon use
-            </p>
+            <div className="text-center space-y-4">
+              <p className="text-sm text-muted-foreground">
+                <strong className="text-foreground">Last updated:</strong> September 2025 •
+                <strong className="text-foreground ml-4">Effective:</strong> Immediately upon use
+              </p>
+              <Link to="/privacy-policy">
+                <Button variant="outline" size="sm" className="gap-2">
+                  View Full Privacy Policy
+                  <ExternalLink className="w-4 h-4" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
