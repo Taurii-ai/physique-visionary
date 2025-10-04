@@ -1,4 +1,29 @@
 Options -MultiViews
 RewriteEngine On
+
+# Handle Angular and React Router
+# Note: use case insensitive matching
+RewriteCond %{REQUEST_URI} ^/privacy-policy.*$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
+
+# Handle all other routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [QSA,L]
+
+# Cache static assets
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/ico "access plus 1 year"
+    ExpiresByType image/icon "access plus 1 year"
+    ExpiresByType text/ico "access plus 1 year"
+    ExpiresByType application/ico "access plus 1 year"
+</IfModule>
