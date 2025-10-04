@@ -48,12 +48,12 @@ const Features = () => {
           <h2 className="text-4xl md:text-6xl font-bold leading-tight">
             Everything You Need to
             <span className="block text-accent bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-              Perfect Your Physique
+              Transform Your Body
             </span>
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Stop relying on subjective opinions. Get data-driven insights
-            that help you build your dream physique with scientific precision.
+            that help you build your dream body with scientific precision.
           </p>
         </div>
 

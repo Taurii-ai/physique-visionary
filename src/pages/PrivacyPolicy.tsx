@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
               </Button>
             </Link>
             <div>
-              <h1 className="text-2xl font-bold text-accent">Physique AI</h1>
+              <h1 className="text-2xl font-bold text-accent">SculptyAI</h1>
               <p className="text-sm text-muted-foreground">Privacy Policy</p>
             </div>
           </div>

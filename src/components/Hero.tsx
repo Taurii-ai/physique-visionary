@@ -23,11 +23,11 @@ const Hero = () => {
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-tight">
                 Transform Your
                 <span className="block text-accent bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-                  Physique
+                  Body
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                Get objective, data-driven insights about your physique progress with professional-grade AI analysis.
+                Get objective, data-driven insights about your body transformation with professional-grade AI analysis.
               </p>
             </div>
 

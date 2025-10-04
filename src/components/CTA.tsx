@@ -17,7 +17,7 @@ const CTA = () => {
             <h2 className="text-4xl md:text-7xl font-bold leading-tight">
               Ready to Transform
               <span className="block text-accent bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-                Your Physique?
+                Your Body?
               </span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">

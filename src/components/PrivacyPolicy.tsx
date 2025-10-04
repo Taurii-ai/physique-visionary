@@ -33,7 +33,7 @@ const PrivacyPolicy = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-3 text-accent">No Account Required</h3>
                 <p className="text-muted-foreground">
-                  You can use Physique AI without creating an account or providing 
+                  You can use SculptyAI without creating an account or providing
                   any personal information.
                 </p>
               </div>
@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-3 text-accent">Contact</h3>
                 <p className="text-muted-foreground">
-                  Questions about privacy? Contact us at privacy@physiqueai.com
+                  Questions about privacy? Contact us at privacy@sculptyai.com
                 </p>
               </div>
             </div>

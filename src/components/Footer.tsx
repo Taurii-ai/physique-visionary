@@ -10,9 +10,9 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded bg-accent flex items-center justify-center">
-                  <span className="text-accent-foreground font-bold text-sm">PA</span>
+                  <span className="text-accent-foreground font-bold text-sm">SA</span>
                 </div>
-                <span className="font-bold text-xl text-accent">Physique AI</span>
+                <span className="font-bold text-xl text-accent">SculptyAI</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 AI-powered body analysis and fitness insights for everyone.
@@ -68,17 +68,17 @@ const Footer = () => {
               <h4 className="font-semibold text-foreground">Connect</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="mailto:support@physique-ai.com" className="text-muted-foreground hover:text-accent transition-colors">
+                  <a href="mailto:support@sculptyai.com" className="text-muted-foreground hover:text-accent transition-colors">
                     Support
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:privacy@physique-ai.com" className="text-muted-foreground hover:text-accent transition-colors">
+                  <a href="mailto:privacy@sculptyai.com" className="text-muted-foreground hover:text-accent transition-colors">
                     Privacy Questions
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:feedback@physique-ai.com" className="text-muted-foreground hover:text-accent transition-colors">
+                  <a href="mailto:feedback@sculptyai.com" className="text-muted-foreground hover:text-accent transition-colors">
                     Feedback
                   </a>
                 </li>
@@ -90,7 +90,7 @@ const Footer = () => {
           <div className="mt-8 pt-8 border-t border-border/10">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-muted-foreground">
-                © 2025 Physique AI. All rights reserved.
+                © 2025 SculptyAI. All rights reserved.
               </p>
               <div className="flex items-center gap-6 text-sm">
                 <Link to="/privacy-policy" className="text-muted-foreground hover:text-accent transition-colors">
